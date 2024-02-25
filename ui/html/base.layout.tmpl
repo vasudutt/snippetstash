@@ -1,0 +1,23 @@
+{{define "base"}}
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <title>{{template "title" .}} - SnippetStash</title>
+        <link rel='stylesheet' href='/static/css/main.css'>
+    </head>
+    <body>
+        <header>
+            <h1><a href='/'>SnippetStash</a></h1>
+        </header>
+        <nav>
+            <a href='/'>Home</a>
+        </nav>
+        <section>
+            {{template "body" .}}
+</section>
+ <!-- Invoke the footer template -->
+        {{template "footer" .}}
+    </body>
+</html>
+{{end}}
